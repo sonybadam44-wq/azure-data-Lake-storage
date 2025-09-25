@@ -1,0 +1,110 @@
+{
+	"name": "db_nycpayroll_2020",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "FiscalYear",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "PayrollNumber",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "AgencyID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "AgencyName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "EmployeeID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "LastName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "FirstName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "AgencyStartDate",
+				"type": "date"
+			},
+			{
+				"name": "WorkLocationBorough",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TitleCode",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "TitleDescription",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LeaveStatusasofJune30",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BaseSalary",
+				"type": "decimal",
+				"precision": 10,
+				"scale": 2
+			},
+			{
+				"name": "PayBasis",
+				"type": "nvarchar"
+			},
+			{
+				"name": "RegularHours",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "RegularGrossPaid",
+				"type": "decimal",
+				"precision": 10,
+				"scale": 2
+			},
+			{
+				"name": "OTHours",
+				"type": "decimal",
+				"precision": 10,
+				"scale": 2
+			},
+			{
+				"name": "TotalOTPaid",
+				"type": "decimal",
+				"precision": 10,
+				"scale": 2
+			},
+			{
+				"name": "TotalOtherPay",
+				"type": "decimal",
+				"precision": 10,
+				"scale": 2
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "nycpayroll_2020"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

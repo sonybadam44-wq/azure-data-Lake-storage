@@ -1,0 +1,33 @@
+{
+	"name": "db_payrollaggregatedata",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "YearOfData",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "AgencyName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TotalGrossPaid",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 2
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "PayrollAggregatedData"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
